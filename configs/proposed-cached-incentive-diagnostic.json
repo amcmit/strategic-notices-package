@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "stage": "post-M4-cached-incentive-diagnostic",
+  "status": "proposal_only_requires_owner_review",
+  "label": "exploratory_outside_approved_grid",
+  "m5_paused": true,
+  "equilibrium_selection_work": false,
+  "m3_manifest_sha256": "a53b7ac7b343ac95f5c393b1c0339d9f1e2e5a1470bd8c2c2577d1e7ce5aa0c4",
+  "m3_trajectory_tree_sha256": "b7c8d02fc6c5f9ca9d6939313b35b26b74a7a44c137f191047e333bb25e6da2f",
+  "m3_analysis_summary_sha256": "0be8a81697e41068e2ebc4fad2e4e7c1626bccb6e2b71f57d29dfeee9c997052",
+  "g3_followup_diagnostic_sha256": "b900e2629c1163852911684792749addc27885ff893272cf8a3d99cb08ea1f94",
+  "network_split": "design_only",
+  "network_count": 24,
+  "actual_type": "long",
+  "demand_scenario_multipliers": [0.8, 1, 1.2],
+  "demand_weights_source": "approved_M3_manifest",
+  "primary_comparison": {
+    "truthful": {"structured_notice": "major", "severe_belief": 1.0},
+    "under_report": {"structured_notice": "minor", "severe_belief": 0.0}
+  },
+  "fixed_belief_order_comparison": {
+    "truthful": {"structured_notice": "major", "severe_belief": 1.0},
+    "under_report": {"structured_notice": "minor", "severe_belief": 1.0}
+  },
+  "exact_cached_cell_count": 216,
+  "margin_primary": 3,
+  "margin_descriptive_sensitivity": [1, 5],
+  "penalty_domain": "nonnegative_continuous_analytic_revaluation_no_grid_search",
+  "approved_discrete_penalty_grid_for_reference": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+  "gain_identity": "margin_times_false_minus_truth_primary_delivered_minus_penalty_times_false_minus_truth_primary_shortfall",
+  "critical_penalty_rule": "solve_zero_of_affine_gain_when_shortfall_slope_nonzero;_classify_negative_roots_zero_endpoint_ties_positive_roots_and_identically_zero_or_constant_sign_cases;_report_whether_positive_root_is_within_0_to_10",
+  "backup_reporting": "paired_backup_delivery_difference_and_active_periods_are_physical_descriptors_not_independent_supplier_payoff_terms;_required_three_way_accounting_split_has_explicit_residual_and_is_noncausal",
+  "order_reporting": "compare_period_primary_order_and_spot_order_actions_and_accepted_new_obligations;_count_networks_with_any_paired_scenario_change_and_all_three_scenarios_change_separately_for_joint_and_fixed_belief_comparisons",
+  "quantity_tolerance": 1e-7,
+  "toy_oracle_at_margin3": {
+    "long_false_minus_truth_primary_delivered": 2,
+    "long_false_minus_truth_primary_shortfall": 1,
+    "long_false_minus_truth_backup_delivered": -4,
+    "gain": "6-penalty",
+    "critical_penalty": 6
+  },
+  "inference": "exploratory_descriptive_network_rows_and_equal_family_summary;_no_new_confirmatory_intervals_or_equilibrium_claims",
+  "new_physical_trajectories": 0,
+  "mip_solves": 0,
+  "resource_caps": {"wall_seconds": 120, "process_rss_mib": 256, "disk_mib": 10, "auto_retries": 0},
+  "confirmation_case_access": false,
+  "local_model_calls": false,
+  "paid_api_calls": false
+}

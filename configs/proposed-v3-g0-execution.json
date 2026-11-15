@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "scope": "v3-g0-analytical-only",
+  "status": "proposed_pending_exact_owner_approval",
+  "test": "tests/test_v3_g0_window_proposed.py",
+  "approval_receipt": "configs/owner-approvals/v3-g0-analytical.json",
+  "marker": "results/v3_g0/attempt.started",
+  "log": "results/v3_g0/pytest.txt",
+  "output": "results/v3_g0/acceptance.json",
+  "caps": {
+    "wall_seconds": 900,
+    "peak_rss_mib": 512,
+    "grid_cases": 14560,
+    "retries": 0
+  },
+  "file_sha256": {
+    "docs/PROPOSED_V3_PROTOCOL_RECONCILED.md": "f9b7c4a4bf5d449dd5e9e6f625cfd4daf9c5c716033cb66b93a0a4484fbc3a2c",
+    "docs/V3_WINDOW_REDERIVATION_PROPOSAL.md": "b8baea2609bdb4729a19b4dad71164f764149b25db58d3999e3225598ea03d9d",
+    "docs/V3_BOUNDARY_ALLOCATION_AMENDMENT_PROPOSAL.md": "49d4e8ce5740a1fdb6d7d24ec9091717d8e8fababfc12848e0d5734d17e27a81",
+    "docs/V3_G0_ENUMERATION_SPEC.md": "d44cb4b6ed5b6c4a8ae19b16d1f3be665b356079c38475d53a9b528f413abad8",
+    "src/sn/analytical_window_v3.py": "c0e34aa0f236cb171e37c1a7eb56ad748307be72d70af98803ec442fa6d930f6",
+    "src/sn_g0_reference_v3.py": "f3a47c80163aedf1ef28909b6690f4c94d80ed1eb041a256893904af177d4c87",
+    "tests/test_v3_g0_window_proposed.py": "c569af9a9fbf673d894190111067ac552a05e5ca6db8acadfd29d5e30352d199",
+    "scripts/run_v3_g0_approved.py": "ca6356088cf7c4f2e35691f717eab370d8316df0ac135bf0126ed16b491f4960"
+  }
+}

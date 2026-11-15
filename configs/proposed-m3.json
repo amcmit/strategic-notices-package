@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "stage": "M3",
+  "status": "proposal_only_requires_G2_approval",
+  "design_manifest": "configs/design/manifest.json",
+  "design_manifest_sha256": "25a9adf84c8a4bcb8aa653456ef24e4304a1e9be87931695f5d7fad5a473f3f3",
+  "network_count": 24,
+  "horizon_periods": 10,
+  "primary_capacity": 1,
+  "short_duration": 1,
+  "long_duration": 3,
+  "disruption_onset_rule": "network.demand_start - 1",
+  "revelation_rule": "disruption_onset + 1",
+  "notice_schedules": {
+    "minor": "short_type_capacity_schedule",
+    "major": "long_type_capacity_schedule"
+  },
+  "actual_types": ["short", "long"],
+  "public_severe_prior": 0.5,
+  "belief_grid_severe": [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1],
+  "realized_demand_multipliers": [0.8, 1, 1.2],
+  "demand_scenario_weights": [0.3333333333333333, 0.3333333333333333, 0.3333333333333334],
+  "future_conditional_mean_demand_multiplier": 1,
+  "contract": {
+    "order_lead": 1,
+    "primary_price": 1,
+    "backup_price": 2,
+    "backup_minimum": 1,
+    "qualification_lead": 2,
+    "qualification_cost": 2,
+    "spot_price": 6,
+    "spot_capacity": 2,
+    "backlog_cost": 20
+  },
+  "primary_solve_relative_mip_gap": 0,
+  "per_solve_phase_time_limit_seconds": 2,
+  "additional_clairvoyant_trajectories": 288,
+  "max_adaptive_belief_refinements_per_network_type_notice_demand": 10,
+  "base_trajectory_count": 3168,
+  "max_adaptive_trajectory_count": 2880,
+  "max_total_trajectory_count": 6336,
+  "payoff_revaluation_only": {
+    "supplier_margin_grid": [1, 3, 5],
+    "shortfall_penalty_grid": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+    "continuation_value": 0
+  },
+  "resource_caps": {
+    "wall_seconds": 7200,
+    "process_rss_mib": 2048,
+    "disk_mib": 1024,
+    "auto_retries": 0
+  },
+  "confirmation_case_access": false,
+  "local_model_calls": false,
+  "paid_api_calls": false
+}

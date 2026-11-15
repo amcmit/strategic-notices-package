@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+message: "Please cite the associated study. Author details will be completed before release."
+title: "When Does Misreporting Pay? Strategic Recovery Notices, Backup Commitments, and Supplier Incentives"
+type: software
+version: 0.0.1
+authors:
+  - family-names: AUTHOR_PLACEHOLDER
+license: MIT
