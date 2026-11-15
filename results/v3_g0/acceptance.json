@@ -1,0 +1,15 @@
+{
+  "approval_receipt_sha256": "2f1ba3a53a0176c16d2ae2329d3bff07d566b69da21c3ace4b3d5da5c8759b91",
+  "cap_breached": false,
+  "elapsed_seconds": 145.97712816705462,
+  "exit_code": 0,
+  "log_sha256": "3c1a6ad49a2fa2919be2d067633e8ef6d705e2e7f73cd8a9358d3f7103a7fbc7",
+  "manifest_sha256": "b931f782d568c9b9c327dc0248b79ac22cac2a8392fee0b50a72021c7f6b56b3",
+  "passed": true,
+  "peak_child_rss_mib": 198.9375,
+  "rss_cap_mib": 512,
+  "schema": 1,
+  "test": "tests/test_v3_g0_window_proposed.py",
+  "timed_out": false,
+  "wall_cap_seconds": 900
+}

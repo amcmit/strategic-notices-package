@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools==80.9.0", "wheel==0.45.1"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "strategic-notices"
+version = "0.0.1"
+description = "Reproducible study of contractual disruption notices and planning"
+requires-python = ">=3.11,<3.12"
+dependencies = ["numpy==2.2.6", "scipy==1.17.1"]
+
+[project.scripts]
+sn-study = "sn.cli:main"
+
+[project.optional-dependencies]
+dev = ["pytest==8.4.2"]
+plot = ["matplotlib==3.10.3"]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+py-modules = ["sn_g0_reference_v3"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

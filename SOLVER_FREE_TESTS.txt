@@ -1,0 +1,8 @@
+paper/incentive_map_r1/test_map.py
+paper/margin_repricing_r1/test_reprice.py
+tests/test_core.py
+tests/test_networks.py
+tests/test_toy.py
+tests/test_v3_g0_window_proposed.py
+tests/test_v3_verifier_canonical_r3.py
+tests/test_release_verifier.py
